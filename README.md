@@ -5,7 +5,6 @@
 Project Enigma is a sleek, Python-based QR Code Generator featuring a modern aesthetic interface. It allows users to quickly input data, generate QR codes, and save them in high quality.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-yellow.svg)
 
 ## 🌟 Features
@@ -28,7 +27,7 @@ Follow these steps to run the project on your local machine.
 
 1.  **Clone the repository (or download):**
     ```bash
-    git clone [https://github.com/yourusername/project-enigma.git](https://github.com/yourusername/project-enigma.git)
+    git clone https://github.com/fas0ftware/project-enigma.git
     cd project-enigma
     ```
 
