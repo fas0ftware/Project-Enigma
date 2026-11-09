@@ -1,6 +1,6 @@
 # 🧩 Project Enigma
 
-**Powered by Aesthesius**
+**Powered by FA Software**
 
 Project Enigma is a sleek, Python-based QR Code Generator featuring a modern aesthetic interface. It allows users to quickly input data, generate QR codes, and save them in high quality.
 
@@ -74,4 +74,4 @@ QR Engine: qrcode
 ```
 
 ## 👤 Author
-Anıl (Aesthesius) Coding the future.
+Anıl (FA Software) Coding the future.

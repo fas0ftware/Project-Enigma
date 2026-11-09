@@ -2,8 +2,8 @@ import customtkinter as ctk
 import qrcode
 from PIL import Image
 
-# --- Aesthesius Configuration ---
-ctk.set_appearance_mode("Dark")  # Aesthesius dark theme
+# --- FA Software Configuration ---
+ctk.set_appearance_mode("Dark")  # FA Software dark theme
 ctk.set_default_color_theme("blue")  # Theme color
 
 class ProjectEnigma(ctk.CTk):
@@ -11,7 +11,7 @@ class ProjectEnigma(ctk.CTk):
         super().__init__()
 
         # Window Settings
-        self.title("Aesthesius - Project Enigma")
+        self.title("FA Software - Project Enigma")
         self.geometry("500x550")
         self.resizable(False, False)
 
