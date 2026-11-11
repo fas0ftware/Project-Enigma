@@ -24,7 +24,7 @@ def _escape_mecard(value: str) -> str:
     return re.sub(r'([\\;,:"])', r"\\\1", value)
 
 
-def wifi_payload(ssid: str, password: str = "", security: str = "WPA", hidden: bool = False) -> str:
+def wifi_payload(ssid: str, password: str = "", security: str = "WPA", hidden: bool = False) -> str:  # empty default = open network  # nosec B107
     security = security.upper()
     if security not in ("WPA", "WEP", "NOPASS"):
         raise ValueError("security must be WPA, WEP or nopass")
