@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="761" height="388" viewBox="0 0 761 388">
+<rect width="100%" height="100%" rx="10" fill="#0d1117" stroke="#30363d"/>
+<rect width="100%" height="32" rx="10" fill="#161b22"/><rect y="22" width="100%" height="10" fill="#161b22"/>
+<circle cx="18" cy="16" r="6" fill="#ff5f56"/><circle cx="38" cy="16" r="6" fill="#ffbd2e"/><circle cx="58" cy="16" r="6" fill="#27c93f"/>
+<text x="380" y="21" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" text-anchor="middle">Project Enigma — pytest (codes decoded with OpenCV)</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" xml:space="preserve">
+<text x="14" y="56" fill="#58a6ff">$ python -m pytest -v</text>
+<text x="14" y="74" fill="#e6edf3">============================= test session starts ==============================</text>
+<text x="14" y="92" fill="#e6edf3">platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /venv-prom/bin/python</text>
+<text x="14" y="110" fill="#e6edf3">rootdir: .</text>
+<text x="14" y="128" fill="#e6edf3">collecting ... collected 9 items</text>
+<text x="14" y="146" fill="#e6edf3"></text>
+<text x="14" y="164" fill="#3fb950">tests/test_core.py::PayloadTests::test_other_payloads PASSED             [ 11%]</text>
+<text x="14" y="182" fill="#3fb950">tests/test_core.py::PayloadTests::test_vcard PASSED                      [ 22%]</text>
+<text x="14" y="200" fill="#3fb950">tests/test_core.py::PayloadTests::test_wifi_escapes_special_characters PASSED [ 33%]</text>
+<text x="14" y="218" fill="#3fb950">tests/test_core.py::StyleTests::test_contrast_rules PASSED               [ 44%]</text>
+<text x="14" y="236" fill="#3fb950">tests/test_core.py::StyleTests::test_limits PASSED                       [ 55%]</text>
+<text x="14" y="254" fill="#3fb950">tests/test_core.py::RoundTripTests::test_colours_and_logo_still_decode PASSED [ 66%]</text>
+<text x="14" y="272" fill="#e6edf3">tests/test_core.py::RoundTripTests::test_payload_types_decode </text>
+<text x="14" y="290" fill="#3fb950">tests/test_core.py::RoundTripTests::test_payload_types_decode PASSED     [ 77%]</text>
+<text x="14" y="308" fill="#3fb950">tests/test_core.py::RoundTripTests::test_svg_output PASSED               [ 88%]</text>
+<text x="14" y="326" fill="#3fb950">tests/test_core.py::CliTests::test_writes_png_and_svg_and_refuses_overwrite PASSED [100%]</text>
+<text x="14" y="344" fill="#e6edf3"></text>
+<text x="14" y="362" fill="#3fb950">===================== 9 passed, 5 subtests passed in 0.28s =====================</text>
+</g></svg>

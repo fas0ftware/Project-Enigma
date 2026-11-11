@@ -1,77 +1,45 @@
 # 🧩 Project Enigma
 
-**Powered by FA Software**
+[![CI](https://github.com/fas0ftware/Project-Enigma/actions/workflows/ci.yml/badge.svg)](https://github.com/fas0ftware/Project-Enigma/actions/workflows/ci.yml)
+![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Python](https://img.shields.io/badge/python-3.11%2B-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Project Enigma is a sleek, Python-based QR Code Generator featuring a modern aesthetic interface. It allows users to quickly input data, generate QR codes, and save them in high quality.
+A QR code generator by **FA Software**: a dark CustomTkinter desktop app plus a command-line tool.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Python](https://img.shields.io/badge/python-3.10%2B-yellow.svg)
+<p align="center"><img src="docs/sample-url.png" width="200"> <img src="docs/sample-wifi.png" width="200"></p>
 
-## 🌟 Features
+## Features
 
-* **Modern UI:** Powered by `CustomTkinter`, fully supporting Dark Mode.
-* **Instant Generation:** Generates high-resolution QR codes instantly from text or links.
-* **Easy Save:** Save your generated QR codes as `.png` files with a single click.
-* **Error Handling:** User-friendly validation and error messages.
+- Payload types: text/URL, **Wi-Fi** (with correct escaping of `; , : " \`), **vCard contact**, e-mail, SMS, phone, location.
+- Custom colours with a **contrast check** (unreadable or inverted codes are refused), error-correction level, size, border.
+- **Centre logo** (automatically uses error level H), **PNG and SVG** export, save dialog instead of a fixed file name.
 
-## 🛠️ Installation
-
-Follow these steps to run the project on your local machine.
-
-### Requirements
-
-* Python 3.x
-* pip
-
-### Step-by-Step Setup
-
-1.  **Clone the repository (or download):**
-    ```bash
-    git clone https://github.com/fas0ftware/project-enigma.git
-    cd project-enigma
-    ```
-
-2.  **Create and activate a Virtual Environment (venv):**
-    * *Windows:*
-        ```bash
-        python -m venv venv
-        .\venv\Scripts\activate
-        ```
-    * *macOS/Linux:*
-        ```bash
-        python3 -m venv venv
-        source venv/bin/activate
-        ```
-
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## 🚀 Usage
-
-After installation, run the application using:
+## Usage
 
 ```bash
-python main.py
-
-Enter the link or text you want to convert into the input field.
-
-Click the "Generate QR" button.
-
-Once the preview appears, click "Save Image" to download the file.
+pip install -r requirements.txt
+python main.py                                    # desktop app
+python cli.py text "https://example.com" -o site.png
+python cli.py wifi --ssid "Home" --password "s3cret" -o wifi.png --fg "#1e3a8a" --bg "#fefce8"
+python cli.py contact --name "Ada Lovelace" --phone "+44 20 7946 0000" -o ada.svg
 ```
 
-## 📂 Tech Stack
+## Tests
+
+Every generated code (including coloured codes and codes with a logo) is **decoded again with OpenCV** and must return the exact input.
+
 ```bash
-Language: Python
-
-GUI: CustomTkinter
-
-Image Processing: Pillow (PIL)
-
-QR Engine: qrcode
+pip install -r requirements-dev.txt && python -m pytest -v
 ```
 
-## 👤 Author
-Anıl (FA Software) Coding the future.
+![Test results](docs/test-results.svg)
+
+## Changelog
+
+- **2.0.0** – Core module and CLI, Wi-Fi/vCard/e-mail/SMS/phone/geo payloads, colours with contrast check, logo, SVG, save dialog, Pillow 13 (12.1 had known advisories), decode-verified tests, CI.
+- **1.0.0** – Text to QR, fixed file name.
+
+---
+
+Part of the **FA Software** projects. Licensed under the [MIT License](LICENSE).
